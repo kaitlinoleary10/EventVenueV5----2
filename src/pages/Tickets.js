@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import '../styles.css';
 
 function Tickets() {
   const navigate = useNavigate();
+  const { eventName, eventDate } = useParams();
   
   const [boxTickets, setBoxTickets] = useState(0);
   const [orchestraTickets, setOrchestraTickets] = useState(0);
@@ -33,12 +34,18 @@ function Tickets() {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-    navigate('/cart');
+    navigate(`/cart/${encodeURIComponent(eventName)}/${encodeURIComponent(eventDate)}`);
   };
 
   return (
     <div className="tickets-page">
       <h1>Select Your Tickets</h1>
+      <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
+        Event: {eventName.replace(/-/g, ' ')} </h3>
+
+        <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
+        Date: {eventDate} </h3>
+    
       <div className="ticket-option">
         <label>Box Tickets ($300.00 each):</label>
         <select value={boxTickets} onChange={(e) => setBoxTickets(Number(e.target.value))}>
@@ -47,6 +54,9 @@ function Tickets() {
           ))}
         </select>
       </div>
+      <br /> 
+
+
       <div className="ticket-option">
         <label>Orchestra Tickets ($200.00 each):</label>
         <select value={orchestraTickets} onChange={(e) => setOrchestraTickets(Number(e.target.value))}>
@@ -55,6 +65,9 @@ function Tickets() {
           ))}
         </select>
       </div>
+      <br /> 
+
+
       <div className="ticket-option">
         <label>Main Floor Tickets ($150.00 each):</label>
         <select value={mainFloorTickets} onChange={(e) => setMainFloorTickets(Number(e.target.value))}>
@@ -63,6 +76,10 @@ function Tickets() {
           ))}
         </select>
       </div>
+      <br /> 
+
+
+
       <div className="ticket-option">
         <label>Balcony Tickets ($100.00 each):</label>
         <select value={balconyTickets} onChange={(e) => setBalconyTickets(Number(e.target.value))}>
@@ -71,7 +88,26 @@ function Tickets() {
           ))}
         </select>
       </div>
-      <button onClick={handleAddToCart}>Add To Cart</button>
+      <br /> 
+
+      
+      <button 
+          style={{
+            display: 'block',
+            padding: '10px 20px', 
+            fontSize: '16px',     
+            fontWeight: 'bold',
+            backgroundColor: '#FF6700',
+            color: 'white',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+          }}
+          
+          onClick={handleAddToCart}
+        >
+          Add to Cart
+        </button>
     </div>
   );
 }
