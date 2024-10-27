@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { createContext, useEffect, useState } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import '../styles.css';
 
 function Cart() {
   const navigate = useNavigate();
   const [cart, setCart] = useState(null);
   const [totalPrice, setTotalPrice] = useState(0);
+  const {eventName, eventDate} = useParams();
 
   useEffect(() => {
+    console.log("Event Name:", eventName);
+    console.log("Event Date:", eventDate);
     const cartData = localStorage.getItem('cart');
+    console.log("Cart Data:", cartData);
     if (cartData) {
       const parsedCart = JSON.parse(cartData);
       setCart(parsedCart);
@@ -28,7 +32,7 @@ function Cart() {
       
       setTotalPrice(total);
     }
-  }, []);
+  }, [eventName, eventDate]);
 
   // Function to calculate the total price
   const calculateTotalPrice = (updatedCart) => {
@@ -67,14 +71,33 @@ function Cart() {
         return; // Prevent the purchase process if no tickets are selected
       }
 
+      const purchaseData = {
+        showName : eventName.replace(/-/g, ' '),
+        eventDate: eventDate,
+        totalTickets: totalTickets,
+        boxTickets: cart.box,
+        orchestraTickets: cart.orchestra,
+        mainFloorTickets: cart.mainFloor,
+        balconyTickets: cart.balcony,
+        totalPrice : totalPrice
+      };
+
       // If there are tickets, proceed with purchase
-      alert("Purchase functionality not implemented.");
+      //alert("Purchase functionality not implemented.");
+      navigate('/confirmation', { state: purchaseData }); 
     }
   };
   
   return (
     <div className="cart-page">
       <h1>Your Cart</h1>
+      <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
+        Event: {eventName.replace(/-/g, ' ')} </h3>
+
+        <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
+        Date: {eventDate} </h3>
+    
+
       {cart ? (
         <div>
           <div className="ticket-selection">
@@ -85,6 +108,7 @@ function Cart() {
               ))}
             </select>
           </div>
+          <br /> 
 
           <div className="ticket-selection">
             <label>Orchestra Tickets:</label>
@@ -94,6 +118,7 @@ function Cart() {
               ))}
             </select>
           </div>
+          <br /> 
 
           <div className="ticket-selection">
             <label>Main Floor Tickets:</label>
@@ -103,6 +128,7 @@ function Cart() {
               ))}
             </select>
           </div>
+          <br /> 
 
           <div className="ticket-selection">
             <label>Balcony Tickets:</label>
@@ -112,9 +138,28 @@ function Cart() {
               ))}
             </select>
           </div>
+          <br /> 
 
           <h2>Total Price: ${totalPrice.toFixed(2)}</h2>
-          <button onClick={handlePurchase}>Purchase</button>
+          <button 
+          style={{
+            display: 'block',
+            padding: '10px 20px', 
+            fontSize: '16px',     
+            fontWeight: 'bold',
+            backgroundColor: '#FF6700',
+            color: 'white',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+          }}
+          
+          onClick={handlePurchase}
+        >
+          Purchase
+        </button>
+
+          
         </div>
       ) : (
         <p>Your cart is empty.</p>
