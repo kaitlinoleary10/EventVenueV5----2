@@ -8,13 +8,15 @@ import PurchaseConfirmation from './pages/PurchaseConfirmation';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+
+export const HOME_PATH = '/EventVenueV5';
 function App() {
   return (
     <Router>
       {/* Header will be rendered once for all routes */}
       <Header />
       <Routes>
-        <Route path="/EventVenueV5" element={<Home />} />
+        <Route path={HOME_PATH} element={<Home />} />
         <Route path="/event/:eventName/:eventDate" element={<Event />}/>
         <Route path="/cart/:eventName/:eventDate" element={<Cart />}/>
         <Route path="/tickets/:eventName/:eventDate" element={<Tickets />}/>
