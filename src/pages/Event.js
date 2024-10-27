@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom'; 
+import { FaBookmark } from 'react-icons/fa'; 
 
 function EventPage() {
   const { eventName, eventDate } = useParams(); // get URL parameters
   const [event, setEvent] = useState(null); // store the event object
   const [loading, setLoading] = useState(true); // handle loading state
   const [error, setError] = useState(null); // handle any fetch errors
+    const [isSaved, setIsSaved] = useState(false);  // State for saving the event
+    const [buttonText, setButtonText] = useState('Save Event');  // Track the button text
 
   useEffect(() => {
     // Fetch the events data from the JSON file
@@ -65,7 +68,27 @@ function EventPage() {
   if (error) {
     return <p>{error}</p>;
   }
+    // Handle save button click
+    const handleSaveClick = () => {
+        setIsSaved(!isSaved);
+        setButtonText(isSaved ? 'Save Event' : 'Saved');  // Toggle between "Save Event" and "Saved"
+    };
 
+    // Handle mouse hover over the button
+    const handleMouseEnter = () => {
+        if (isSaved) {
+            setButtonText('Unsave');  // Change to "Unsave" when hovering over a saved event
+        }
+    };
+
+    // Handle mouse leaving the button
+    const handleMouseLeave = () => {
+        if (isSaved) {
+            setButtonText('Saved');  // Change back to "Saved" when the mouse leaves the button
+        } else {
+            setButtonText('Save Event');  // Change back to "Save Event" when the event is not saved
+        }
+    };
   return (
     <div className="event-page">
       <h1 style={{ textTransform: 'capitalize', textAlign: 'center' }}>
@@ -119,7 +142,17 @@ function EventPage() {
         >
           Buy Tickets!
         </button>
-        </Link>
+              </Link>
+              {/* Save For Later button */}
+              <button
+                  className="save-event-button"
+                  onClick={handleSaveClick}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+              >
+                  <FaBookmark className={`save-icon ${isSaved ? 'saved' : 'unsaved'}`} />
+                  {buttonText}
+              </button>
       </div>
     </div>
 
