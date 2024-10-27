@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
+      {/*<Router basename="/EventVenueV5"> 
       {/* Header will be rendered once for all routes */}
       <Header />
       <Routes>
@@ -20,6 +21,8 @@ function App() {
         <Route path="/tickets/:eventName/:eventDate" element={<Tickets />}/>
         <Route path="/confirmation" element={<PurchaseConfirmation />} />
 
+        {/* Pass category as a parameter */}
+        <Route path="/events/:category" element={<Home />} />
       </Routes>
       {/* Footer will be rendered once for all routes */}
       <Footer />
