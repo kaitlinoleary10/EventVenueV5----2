@@ -19,7 +19,6 @@ function App() {
         <Route path="/cart/:eventName/:eventDate" element={<Cart />}/>
         <Route path="/tickets/:eventName/:eventDate" element={<Tickets />}/>
         <Route path="/confirmation" element={<PurchaseConfirmation />} />
-
       </Routes>
       {/* Footer will be rendered once for all routes */}
       <Footer />

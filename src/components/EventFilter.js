@@ -66,16 +66,22 @@ function EventFilter({ onFilterChange }) {
     setPriceRange(value);
   };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault(); // Prevents form submission or page refresh
+            handleFilterChange();
+        }
+    };
+
   return (
     <div className="event-filter">
       <div className="filter-group">
         <label>Search</label>
         <input
-          type="text"
-          value={search}
-          onChange={(e) => {
-            setSearch(e.target.value);
-          }}
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={handleKeyDown} // Trigger search on "Enter"
         />
       </div>
       
