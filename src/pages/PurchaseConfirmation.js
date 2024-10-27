@@ -47,8 +47,7 @@ function PurchaseConfirmation() {
             borderRadius: '8px',
             cursor: 'pointer',
           }}
-          
-          onClick={() => window.location.href = '/'}
+            onClick={() => window.location.href = '/EventVenueV5'}
         >
           Return to Home
         </button>
