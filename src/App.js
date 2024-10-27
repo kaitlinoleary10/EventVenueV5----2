@@ -15,7 +15,7 @@ function App() {
       {/* Header will be rendered once for all routes */}
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/EventVenueV5" element={<Home />} />
         <Route path="/event/:eventName/:eventDate" element={<Event />}/>
         <Route path="/cart/:eventName/:eventDate" element={<Cart />}/>
         <Route path="/tickets/:eventName/:eventDate" element={<Tickets />}/>

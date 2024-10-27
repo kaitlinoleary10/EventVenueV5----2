@@ -7,7 +7,7 @@ function Header() {
     <header>
       <nav>
         <ul className="menu">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/EventVenueV5">Home</Link></li>
           
           {/* Dropdown for "Find Events" */}
           <li className="dropdown">
