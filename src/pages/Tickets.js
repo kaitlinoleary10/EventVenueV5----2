@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import '../styles.css';
 
 function Tickets() {
   const navigate = useNavigate();
@@ -9,27 +10,13 @@ function Tickets() {
   const [orchestraTickets, setOrchestraTickets] = useState(0);
   const [mainFloorTickets, setMainFloorTickets] = useState(0);
   const [balconyTickets, setBalconyTickets] = useState(0);
-  const [ticketPrices, setTicketPrices] = useState({});
 
-  useEffect(() => {
-    // Fetch event data from the JSON file
-    fetch(`${process.env.PUBLIC_URL}/events-mock-data.json`)
-      .then((response) => response.json())
-      .then((data) => {
-        const formattedEventName = decodeURIComponent(eventName).replace(/-/g, ' ');
-        const foundEvent = data.events.find(
-          (e) => e.eventName.toLowerCase() === formattedEventName.toLowerCase()
-        );
-
-        if (foundEvent) {
-          const eventDetail = foundEvent.eventDetails.find(detail => detail.date === eventDate);
-          if (eventDetail) {
-            setTicketPrices(eventDetail.ticketPrices);
-          }
-        }
-      })
-      .catch((error) => console.error('Error fetching event data:', error));
-  }, [eventName, eventDate]);
+  const ticketPrices = {
+    box: 300.00,
+    orchestra: 200.00,
+    mainFloor: 150.00,
+    balcony: 100.00
+  };
 
   const handleAddToCart = () => {
     const cart = {
@@ -38,11 +25,12 @@ function Tickets() {
       mainFloor: mainFloorTickets,
       balcony: balconyTickets
     };
-    const totalTickets = boxTickets + orchestraTickets + mainFloorTickets + balconyTickets;
+    const totalTickets = boxTickets + orchestraTickets + mainFloorTickets + balconyTickets 
 
-    if (totalTickets === 0) {
-      alert("Please select one or more tickets to add to the cart.");
-      return;
+    //check if total tickets selected is more than 0 
+    if (totalTickets === 0){
+      alert("Please select one or more tickets to add tickets to the cart."); 
+    return; 
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -53,68 +41,73 @@ function Tickets() {
     <div className="tickets-page">
       <h1>Select Your Tickets</h1>
       <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
-        Event: {eventName.replace(/-/g, ' ')} 
-      </h3>
-      <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
-        Date: {eventDate} 
-      </h3>
+        Event: {eventName.replace(/-/g, ' ')} </h3>
+
+        <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
+        Date: {eventDate} </h3>
     
       <div className="ticket-option">
-        <label>Box Tickets (${ticketPrices.box} each):</label>
+        <label>Box Tickets ($300.00 each):</label>
         <select value={boxTickets} onChange={(e) => setBoxTickets(Number(e.target.value))}>
           {[...Array(11).keys()].map(num => (
             <option key={num} value={num}>{num}</option>
           ))}
         </select>
       </div>
-      <br />
+      <br /> 
+
 
       <div className="ticket-option">
-        <label>Orchestra Tickets (${ticketPrices.orchestra} each):</label>
+        <label>Orchestra Tickets ($200.00 each):</label>
         <select value={orchestraTickets} onChange={(e) => setOrchestraTickets(Number(e.target.value))}>
           {[...Array(11).keys()].map(num => (
             <option key={num} value={num}>{num}</option>
           ))}
         </select>
       </div>
-      <br />
+      <br /> 
+
 
       <div className="ticket-option">
-        <label>Main Floor Tickets (${ticketPrices.mainFloor} each):</label>
+        <label>Main Floor Tickets ($150.00 each):</label>
         <select value={mainFloorTickets} onChange={(e) => setMainFloorTickets(Number(e.target.value))}>
           {[...Array(11).keys()].map(num => (
             <option key={num} value={num}>{num}</option>
           ))}
         </select>
       </div>
-      <br />
+      <br /> 
+
+
 
       <div className="ticket-option">
-        <label>Balcony Tickets (${ticketPrices.balcony} each):</label>
+        <label>Balcony Tickets ($100.00 each):</label>
         <select value={balconyTickets} onChange={(e) => setBalconyTickets(Number(e.target.value))}>
           {[...Array(11).keys()].map(num => (
             <option key={num} value={num}>{num}</option>
           ))}
         </select>
       </div>
-      <br />
+      <br /> 
 
+      
       <button 
-        style={{
-          display: 'block',
-          padding: '10px 20px', 
-          fontSize: '16px',     
-          fontWeight: 'bold',
-          backgroundColor: '#FF6700',
-          color: 'white',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-        }}
-        onClick={handleAddToCart}
-      >
-        Add to Cart
-      </button>
+          style={{
+            display: 'block',
+            padding: '10px 20px', 
+            fontSize: '16px',     
+            fontWeight: 'bold',
+            backgroundColor: '#FF6700',
+            color: 'white',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+          }}
+          
+          onClick={handleAddToCart}
+        >
+          Add to Cart
+        </button>
     </div>
   );
 }
