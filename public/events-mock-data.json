@@ -20,10 +20,10 @@
           "date": "2024-10-06",
           "time": "19:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -38,20 +38,20 @@
           "date": "2024-11-12",
           "time": "19:30",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-13",
           "time": "19:30",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -66,20 +66,20 @@
           "date": "2024-09-15",
           "time": "19:00",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-09-16",
           "time": "19:00",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -94,20 +94,20 @@
           "date": "2024-10-01",
           "time": "18:30",
           "ticketPrices": {
-            "box": 285.00,
-            "orchestra": 185.00,
-            "mainFloor": 135.00,
-            "balcony": 85.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-02",
           "time": "18:30",
           "ticketPrices": {
-            "box": 285.00,
-            "orchestra": 185.00,
-            "mainFloor": 135.00,
-            "balcony": 85.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -122,20 +122,20 @@
           "date": "2024-11-05",
           "time": "20:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-06",
           "time": "20:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -150,20 +150,20 @@
           "date": "2024-12-10",
           "time": "19:30",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-12-11",
           "time": "19:30",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -178,20 +178,20 @@
           "date": "2024-10-22",
           "time": "20:00",
           "ticketPrices": {
-            "box": 340.00,
-            "orchestra": 240.00,
-            "mainFloor": 190.00,
-            "balcony": 140.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-23",
           "time": "20:00",
           "ticketPrices": {
-            "box": 340.00,
-            "orchestra": 240.00,
-            "mainFloor": 190.00,
-            "balcony": 140.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -206,20 +206,20 @@
           "date": "2024-09-20",
           "time": "21:00",
           "ticketPrices": {
-            "box": 400.00,
-            "orchestra": 300.00,
-            "mainFloor": 250.00,
-            "balcony": 200.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-09-21",
           "time": "21:00",
           "ticketPrices": {
-            "box": 400.00,
-            "orchestra": 300.00,
-            "mainFloor": 250.00,
-            "balcony": 200.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -234,20 +234,20 @@
           "date": "2024-10-28",
           "time": "19:30",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-29",
           "time": "19:30",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -262,20 +262,20 @@
           "date": "2024-11-25",
           "time": "20:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-26",
           "time": "20:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -290,20 +290,20 @@
           "date": "2024-10-17",
           "time": "19:30",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-18",
           "time": "19:30",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -318,20 +318,20 @@
           "date": "2024-12-05",
           "time": "21:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-12-06",
           "time": "21:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -346,20 +346,20 @@
           "date": "2024-12-01",
           "time": "18:00",
           "ticketPrices": {
-            "box": 290.00,
-            "orchestra": 190.00,
-            "mainFloor": 140.00,
-            "balcony": 90.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-12-02",
           "time": "18:00",
           "ticketPrices": {
-            "box": 290.00,
-            "orchestra": 190.00,
-            "mainFloor": 140.00,
-            "balcony": 90.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -374,20 +374,20 @@
           "date": "2024-09-28",
           "time": "20:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-09-29",
           "time": "20:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -402,20 +402,20 @@
           "date": "2024-10-18",
           "time": "19:30",
           "ticketPrices": {
-            "box": 270.00,
-            "orchestra": 170.00,
-            "mainFloor": 120.00,
-            "balcony": 70.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-19",
           "time": "19:30",
           "ticketPrices": {
-            "box": 270.00,
-            "orchestra": 170.00,
-            "mainFloor": 120.00,
-            "balcony": 70.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -430,20 +430,20 @@
           "date": "2024-09-27",
           "time": "21:00",
           "ticketPrices": {
-            "box": 400.00,
-            "orchestra": 300.00,
-            "mainFloor": 250.00,
-            "balcony": 200.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-09-28",
           "time": "21:00",
           "ticketPrices": {
-            "box": 400.00,
-            "orchestra": 300.00,
-            "mainFloor": 250.00,
-            "balcony": 200.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -458,20 +458,20 @@
           "date": "2024-11-15",
           "time": "19:00",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-16",
           "time": "19:00",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -486,20 +486,20 @@
           "date": "2024-10-22",
           "time": "20:00",
           "ticketPrices": {
-            "box": 295.00,
-            "orchestra": 195.00,
-            "mainFloor": 145.00,
-            "balcony": 95.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-23",
           "time": "20:00",
           "ticketPrices": {
-            "box": 295.00,
-            "orchestra": 195.00,
-            "mainFloor": 145.00,
-            "balcony": 95.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -514,20 +514,20 @@
           "date": "2024-11-03",
           "time": "19:00",
           "ticketPrices": {
-            "box": 250.00,
-            "orchestra": 150.00,
-            "mainFloor": 100.00,
-            "balcony": 50.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-04",
           "time": "19:00",
           "ticketPrices": {
-            "box": 250.00,
-            "orchestra": 150.00,
-            "mainFloor": 100.00,
-            "balcony": 50.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -542,20 +542,20 @@
           "date": "2024-10-20",
           "time": "20:30",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-21",
           "time": "20:30",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -570,20 +570,20 @@
           "date": "2024-09-22",
           "time": "19:30",
           "ticketPrices": {
-            "box": 285.00,
-            "orchestra": 185.00,
-            "mainFloor": 135.00,
-            "balcony": 85.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-09-23",
           "time": "19:30",
           "ticketPrices": {
-            "box": 285.00,
-            "orchestra": 185.00,
-            "mainFloor": 135.00,
-            "balcony": 85.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -598,20 +598,20 @@
           "date": "2024-10-10",
           "time": "20:00",
           "ticketPrices": {
-            "box": 310.00,
-            "orchestra": 210.00,
-            "mainFloor": 160.00,
-            "balcony": 110.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-12",
           "time": "20:00",
           "ticketPrices": {
-            "box": 310.00,
-            "orchestra": 210.00,
-            "mainFloor": 160.00,
-            "balcony": 110.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -626,20 +626,20 @@
           "date": "2024-11-01",
           "time": "19:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-02",
           "time": "19:00",
           "ticketPrices": {
-            "box": 350.00,
-            "orchestra": 250.00,
-            "mainFloor": 200.00,
-            "balcony": 150.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -654,20 +654,20 @@
           "date": "2024-09-25",
           "time": "19:30",
           "ticketPrices": {
-            "box": 380.00,
-            "orchestra": 280.00,
-            "mainFloor": 230.00,
-            "balcony": 180.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-09-26",
           "time": "19:30",
           "ticketPrices": {
-            "box": 380.00,
-            "orchestra": 280.00,
-            "mainFloor": 230.00,
-            "balcony": 180.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -682,20 +682,20 @@
           "date": "2024-10-15",
           "time": "20:00",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-16",
           "time": "20:00",
           "ticketPrices": {
-            "box": 275.00,
-            "orchestra": 175.00,
-            "mainFloor": 125.00,
-            "balcony": 75.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -710,20 +710,20 @@
           "date": "2024-09-30",
           "time": "21:00",
           "ticketPrices": {
-            "box": 330.00,
-            "orchestra": 230.00,
-            "mainFloor": 180.00,
-            "balcony": 130.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-01",
           "time": "21:00",
           "ticketPrices": {
-            "box": 330.00,
-            "orchestra": 230.00,
-            "mainFloor": 180.00,
-            "balcony": 130.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -766,20 +766,20 @@
           "date": "2024-11-18",
           "time": "19:00",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-11-19",
           "time": "19:00",
           "ticketPrices": {
-            "box": 325.00,
-            "orchestra": 225.00,
-            "mainFloor": 175.00,
-            "balcony": 125.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -794,20 +794,20 @@
           "date": "2024-10-20",
           "time": "19:30",
           "ticketPrices": {
-            "box": 340.00,
-            "orchestra": 240.00,
-            "mainFloor": 190.00,
-            "balcony": 140.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-10-21",
           "time": "19:30",
           "ticketPrices": {
-            "box": 340.00,
-            "orchestra": 240.00,
-            "mainFloor": 190.00,
-            "balcony": 140.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
@@ -822,20 +822,20 @@
           "date": "2024-12-05",
           "time": "20:00",
           "ticketPrices": {
-            "box": 305.00,
-            "orchestra": 205.00,
-            "mainFloor": 155.00,
-            "balcony": 105.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         },
         {
           "date": "2024-12-06",
           "time": "20:00",
           "ticketPrices": {
-            "box": 305.00,
-            "orchestra": 205.00,
-            "mainFloor": 155.00,
-            "balcony": 105.00
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
           }
         }
       ]
