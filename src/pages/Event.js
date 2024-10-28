@@ -45,6 +45,7 @@ function EventPage() {
               description: foundEvent.description,
             });
             console.log('Description:', foundEvent.description); // Log the description
+          
           } else {
             setError('Event details not found for the specified date.');
           }
