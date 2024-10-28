@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom'; 
-import { FaBookmark } from 'react-icons/fa'; 
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
-import { HOME_PATH } from '../App';
 import { FaBookmark } from 'react-icons/fa';  // Importing the bookmark icon
 
 function EventPage() {
-  const { eventName, eventDate } = useParams();
-  const [event, setEvent] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [selectedDate, setSelectedDate] = useState(null); 
-  const [isSaved, setIsSaved] = useState(false);
-  const [buttonText, setButtonText] = useState('Save Event');
   const { eventName, eventDate } = useParams(); // get URL parameters
   const [event, setEvent] = useState(null); // store the event object
   const [loading, setLoading] = useState(true); // handle loading state
@@ -24,7 +13,7 @@ function EventPage() {
 
   useEffect(() => {
     // Fetch the events data from the JSON file
-    fetch(`${process.env.PUBLIC_URL}/events-mock-data.json`)
+    fetch(`${process.env.PUBLIC_URL}/events-mock-data.json`) // Change the path accordingly
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Failed to fetch event data. Error: ${response.status} ${response.statusText}`);
@@ -38,6 +27,7 @@ function EventPage() {
       const foundEvent = data.events.find(
         (e) => e.eventName.toLowerCase() === formattedEventName.toLowerCase()
       );
+
 
         if (foundEvent) {
           // Find the event detail that matches the eventDate
@@ -55,19 +45,21 @@ function EventPage() {
               description: foundEvent.description,
             });
             console.log('Description:', foundEvent.description); // Log the description
-          
           } else {
-              setError('Event not found.');
+            setError('Event details not found for the specified date.');
           }
+        } else {
+          setError('Event not found.');
+        }
 
-          setLoading(false);
+        setLoading(false);
       })
-          .catch((error) => {
-              console.error('Error fetching data:', error);
-              setError('Error fetching event data.');
-              setLoading(false);
-          });
-  }, [eventName]);
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setError('Error fetching event data.');
+        setLoading(false);
+      });
+  }, [eventName, eventDate]);
 
   if (loading) {
     return <p>Loading...</p>;

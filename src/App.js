@@ -23,6 +23,7 @@ function App() {
         <Route path="/tickets/:eventName/:eventDate" element={<Tickets />}/>
         <Route path="/confirmation" element={<PurchaseConfirmation />} />
 
+
         {/* Pass category as a parameter */}
         <Route path="/events/:category" element={<Home />} />
       </Routes>
